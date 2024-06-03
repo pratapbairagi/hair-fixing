@@ -27,7 +27,7 @@ const HeroSection = () => {
                     <img src={hairPatch3} className="block lg:hidden absolute left-0 h-[65vh] bottom-0 z-0 opacity-30" alt="" />
                     {/* <img src={hairPatch2} className="block lg:hidden absolute right-0 h-[75vh] bottom-0 z-0 opacity-20" alt="" /> */}
 
-                    <ul className="flex lg:hidden gap-x-2 absolute left-[50%] top-8" style={{transform:"translate(-50%, 0)"}}>
+                    <ul className="flex lg:hidden gap-x-2 absolute left-[50%] top-4" style={{transform:"translate(-50%, 0)"}}>
                         <li className="w-16 border border-2 border-red-400 aspect-square rounded-full overflow-hidden">
                             <img src={hair2_} className="w-[100%]" alt="" />
                         </li>
@@ -49,8 +49,8 @@ const HeroSection = () => {
                         <path className="fill-gray-800 opacity-30 flex lg:hidden" fill-opacity="1" d="M0,288L120,293.3C240,299,480,309,720,272C960,235,1200,149,1320,106.7L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
                     </svg>
 
-                    <div className="mx-auto min-h-[70vh] lg:min-h-none lg:mt-0 order-2 lg:order-1 col-span-12 lg:col-span-6 max-w-md text-center lg:mx-0 flex flex-col justify-center lg:flex-auto lg:py-28 lg:text-left relative z-10 lg:static">
-                        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                    <div className="mx-auto min-h-[60vh] lg:min-h-none lg:mt-0 order-2 lg:order-1 col-span-12 lg:col-span-6 max-w-md text-center lg:mx-0 flex flex-col justify-center lg:flex-auto lg:py-28 lg:text-left relative z-10 lg:static">
+                        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mt-8 lg:mt-0">
                             <span className="text-red-600"> NO PAIN </span>
                             <br />
                             <span className="text-gray-900"> HAIR SOLUTION </span>
