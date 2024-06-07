@@ -4,7 +4,7 @@
 const Service_card = ({img="", title="", details=""}) => {
     return (
         <>
-            <div className="min-w-[100%] lg:min-w-[20%] max-w-[300px] p-8 h-max shadow-sm hover:shadow-lg my-3 rounded-md">
+            <div className="col-span-12 lg:col-span-6 p-8 h-max shadow-sm hover:shadow-lg my-3 rounded-md">
                         <div className="service_icon">
                             <img src={img} className="w-16 border" alt="" />
                         </div>
