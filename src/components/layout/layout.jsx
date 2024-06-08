@@ -1,4 +1,5 @@
 import About from "../about/about";
+import Contact from "../contact/contact";
 import HeroSection from "../heroSection/heroSection";
 import Products from "../products/products";
 import Services from "../services/services";
@@ -14,6 +15,7 @@ const Layout = () => {
             <Services/>
             {/* <Products/> */}
             <Testimonial/>
+            <Contact/>
         </div>
     )
 };
