@@ -51,7 +51,7 @@ const HeroSection = () => {
                             <br />
                             <span className="text-gray-900"> HAIR SOLUTION </span>
                         </h2>
-                        <p className="mt-6 text-lg leading-6 lg:leading-8 text-gray-400">
+                        <p className="mt-6 text-md lg:text-lg leading-6 lg:leading-8 text-gray-400">
                         Step into a New Style with Confidence. Try On Our Wigs and Find Your Perfect Match with Our Premium Hair Wigs. Long-Lasting Beauty You Can Rely On!
                         </p>
                         <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
@@ -77,9 +77,9 @@ const HeroSection = () => {
                 </div>
             </div>
 
-               <div className="absolute bottom-[6%] lg:bottom-[4%] right-[5%] min-w-[90%] lg:min-w-[30%] lg:right-[6%] min-h-[10vh] z-10 rounded-md shadow-lg bg-white flex items-center justify-center" >
-                <button  className="w-[50%] min-h-[10vh] font-semibold bg-orange-500 text-gray-100 rounded-md">Demo Video</button>
-                <button  className="w-[50%] h-full text-orange-500 font-semibold rounded-md">Book Trail</button>
+               <div className="absolute bottom-[6%] lg:bottom-[4%] right-[5%] min-w-[90%] lg:min-w-[30%] lg:right-[6%] min-h-[8vh] lg:min-h-[10vh] z-10 rounded-md shadow-lg bg-white flex items-center justify-center" >
+                <button  className="w-[50%] min-h-[8vh] lg:min-h-[10vh] font-semibold bg-orange-500 text-gray-100 rounded-md">Demo Video</button>
+                <button  className="w-[50%] min-h-[8vh] lg:min-h-[10vh] text-orange-500 font-semibold rounded-md">Book Trail</button>
                </div>
 
         </div>

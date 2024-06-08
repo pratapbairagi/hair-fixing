@@ -13,7 +13,7 @@ const Services = () => {
                 <div className="w-full min-w-full max-w-full grid grid-cols-12 gap-x-4" style={{justifyContent:"space-between"}}>
 
 
-                <h6 className="order-1 lg:order-1 col-span-12 lg:col-span-6 text-gray-600 font-semibold mt-8">Our Services</h6>
+                <h6 className="order-1 lg:order-1 col-span-12 lg:col-span-6 text-gray-600 font-semibold mt-8 border-b-2 border-orange-500 py-2 ml-auto w-[70%] text-start">Our Services</h6>
 
                 <div className="order-2 lg:order-3 col-span-12 lg:col-span-6 grid grid-cols-12 overflow-x-auto gap-x-4 gap-y-3 mt-6 px-3">
                     <Service_card
@@ -42,7 +42,7 @@ const Services = () => {
                 </div>
 
 
-                <h6 className="order-3 lg:order-2 col-span-12 lg:col-span-6 text-gray-600 font-semibold mt-8">Our Products</h6>
+                <h6 className="order-3 lg:order-2 col-span-12 lg:col-span-6 text-gray-600 font-semibold mt-8 border-b-2 border-orange-500 py-2 ml-auto w-[70%] text-start">Our Products</h6>
 
                 <div className="order-4 lg:order-4  col-span-12 lg:col-span-6 grid grid-cols-12 overflow-x-auto gap-x-4 gap-y-3 mt-6 px-3">
                     <Service_card
