@@ -7,7 +7,7 @@ import Testimonial_card from "./testimonial_cards/testimonial_card";
 const Testimonial = () => {
 
     return (
-        <div className="col-span-12 h-max flex flex-col py-10">
+        <div className="col-span-12 h-max flex flex-col py-10 mt-5">
 
 <h5 className="#222222 text-xl font-bold w-full text-center"> Testimonial on our <span className="text-[#fa7436] text-xl font-bold"> Servies </span> </h5>
 
