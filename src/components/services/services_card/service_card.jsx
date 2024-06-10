@@ -1,6 +1,7 @@
 
-import { XCircleIcon } from "@heroicons/react/24/outline"
-import { memo, useMemo } from "react";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
+import { XCircleIcon, ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline"
+import { memo, useEffect, useMemo, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Service_card = ({  values = {}, onClick_toggle = () => "", id = "", activeDetails = {} }) => {
@@ -27,6 +28,29 @@ const Service_card = ({  values = {}, onClick_toggle = () => "", id = "", active
         return activeDetails.type?.map((g, gi) => {
              return <span key={gi} className="w-max px-2 py-0.5 text-xs text-gray-300 border rounded-sm">{g}</span>
          })
+     },[activeDetails]);
+
+
+     const [isScrollAvail, setIsScrollAvail] = useState({
+        left : false,
+        right : false
+     });
+     const scrollContainer = useRef(null);
+
+
+     const updateButtons = () => {
+     let { scrollLeft, scrollWidth, clientWidth } = scrollContainer.current;
+        setIsScrollAvail({ left : scrollLeft > 0, right : scrollWidth - clientWidth - scrollLeft > 0});
+      };
+
+     useEffect(()=>{
+        if(activeDetails.title){
+        scrollContainer.current.addEventListener('scroll', updateButtons);
+        }
+
+        if(activeDetails.title && !isScrollAvail.left && !isScrollAvail.right){
+            updateButtons()
+        }
      },[activeDetails])
 
     return (
@@ -46,7 +70,7 @@ const Service_card = ({  values = {}, onClick_toggle = () => "", id = "", active
                     {values.description}
                 </p>
 
-                <div  className="w-full flex flex-col h-max gap-y-1">
+               {activeDetails.title && <div  className="w-full flex flex-col h-max gap-y-1">
                     <span className="flex flex max-w-[100%] overflow-x-auto gap-x-2 w-full mt-4 gap-y-2 text-nowrap">
                         {gender}
                     </span>
@@ -56,11 +80,16 @@ const Service_card = ({  values = {}, onClick_toggle = () => "", id = "", active
                     <span className="flex flex max-w-[100%] overflow-x-auto gap-x-2 w-full gap-y-2 text-nowrap">
                         {color}
                     </span>
-                    <span className="flex flex max-w-[100%] overflow-x-auto gap-x-2 w-full gap-y-2 text-nowrap">
+                    
+                    <span className="w-full flex relative">
+                       { isScrollAvail.left && activeDetails.type.length > 0 && <ChevronLeftIcon className="w-5 font-bold fill-orange-500 absolute left-0"/>}
+                    <span ref={scrollContainer} className="flex flex max-w-[100%] w-max overflow-x-auto gap-x-2 w-full gap-y-2 text-nowrap relative " style={{scrollbarWidth:"none"}}>
                         {type}
                     </span>
+                       {isScrollAvail.right && activeDetails.type.length > 0 &&  <ChevronRightIcon className="w-5 font-bold fill-orange-500 top-0.5 absolute right-0"/>}
+                    </span>
                 </div>
-                
+}                
                 <div className="flex w-full justify-start gap-x-5 mt-5">
                     <button  onClick={() => onClick_toggle({ id : id, values : values })} className="text-sm bg-orange-400 hover:bg-white hover:text-orange-400 border-orange-400 border text-white px-3 py-0.5 rounded-sm">{activeDetails.title ? "Close" : "See More"}</button>
                     <NavLink to={`/${values.product_type === "service" ? "book" : "order"}`} className="text-sm border border-orange-300 text-orange-300 px-3 py-0.5 rounded-sm">{values.product_type === "product" ? "Order" : "Book"}</NavLink>
