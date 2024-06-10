@@ -40,7 +40,7 @@ const Services = () => {
             gender : ["men"],
             size : ["All Size Available"],
             color : [],
-            type : ["Mono Base", "Octagon", "Full lace", "Mirage", "Front Less Mirage", "Australian Mirage", "Australia", "Transparent Poly", "Custmize"]
+            type : ["Mono Base", "Octagon", "Full lace", "Mirage", "Front Less Mirage", "Australian Mirage", "Australian", "Transparent Poly", "Custmize"]
         },
         {
             title : "Hair Topper",

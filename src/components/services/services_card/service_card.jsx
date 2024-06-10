@@ -47,16 +47,16 @@ const Service_card = ({  values = {}, onClick_toggle = () => "", id = "", active
                 </p>
 
                 <div  className="w-full flex flex-col h-max gap-y-1">
-                    <span className="flex flex-wrap gap-x-2 w-full mt-4">
+                    <span className="flex flex max-w-[100%] overflow-x-auto gap-x-2 w-full mt-4 gap-y-2 text-nowrap">
                         {gender}
                     </span>
-                    <span className="flex flex-wrap gap-x-2 w-full">
+                    <span className="flex flex max-w-[100%] overflow-x-auto gap-x-2 w-full gap-y-2 text-nowrap">
                         {size}
                     </span>
-                    <span className="flex flex-wrap gap-x-2 w-full">
+                    <span className="flex flex max-w-[100%] overflow-x-auto gap-x-2 w-full gap-y-2 text-nowrap">
                         {color}
                     </span>
-                    <span className="flex flex-wrap gap-x-2 w-full">
+                    <span className="flex flex max-w-[100%] overflow-x-auto gap-x-2 w-full gap-y-2 text-nowrap">
                         {type}
                     </span>
                 </div>
