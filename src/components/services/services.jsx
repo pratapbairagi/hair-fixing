@@ -38,7 +38,7 @@ const Services = () => {
             description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate.",
             product_type : "product",
             gender : ["men"],
-            size : [],
+            size : ["All Size Available"],
             color : [],
             type : ["Mono Base", "Octagon", "Full lace", "Mirage", "Front Less Mirage", "Australian Mirage", "Australia", "Transparent Poly", "Custmize"]
         },
@@ -48,7 +48,7 @@ const Services = () => {
             description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate.",
             product_type : "product",
             gender : ["women"],
-            size : [],
+            size : ["Different Size Available"],
             color : [],
             type : []
         },
@@ -59,7 +59,7 @@ const Services = () => {
             product_type : "product",
             gender : ["women", "men"],
             size : [],
-            color : ["White Tape", "Red Tape", "Balue Tape"],
+            color : [],
             type : ["White Tape", "Red Tape", "Balue Tape", "No shine Tape"]
         },
         {
@@ -114,7 +114,7 @@ const Services = () => {
             type : []
         },
         {
-            title : " Outside Hair Patch Cutting",
+            title : " Outside Hair Patch Cutting",
             image : cutting,
             description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate.",
             product_type : "service",
@@ -128,7 +128,7 @@ const Services = () => {
             image : scalp_protector,
             description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate.",
             product_type : "product",
-            gender : ["men", "women"],
+            gender : [],
             size : [],
             color : [],
             type : []
