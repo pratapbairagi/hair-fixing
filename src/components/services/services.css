@@ -1,0 +1,18 @@
+
+
+.active_prod_serv_card_details{
+    position: fixed;
+    min-height: 80vh;
+    width: 90vw;
+    left: 5vw;
+    top: 12vh;
+    z-index: 2;
+    background-color: white;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 12; /* Number of lines to show */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: calc(1.2em * 12);
+}
