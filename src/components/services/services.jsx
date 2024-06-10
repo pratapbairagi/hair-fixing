@@ -10,6 +10,7 @@ import hair_topper from "./images/hair_topper.jpg"
 import hair_patch from "./images/hair_patch_men.jpg"
 import remover from "./images/remover.jpg"
 import hair_wig from "./images/hair_wig.jpg"
+import scalp_protector from "./images/scalp-protector.jpg"
 
 import fixing from "./images/fixing.png"
 import maintaining from "./images/maintaining.jpg"
@@ -25,92 +26,112 @@ const Services = () => {
             title : "Hair Wig",
             image : hair_wig,
             description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate.",
-            type : "product",
+            product_type : "product",
             gender : ["women"],
             size : [],
-            color : []
+            color : [],
+            type : []
         },
         {
             title : "Hair Patch",
             image : hair_patch,
             description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate.",
-            type : "product",
+            product_type : "product",
             gender : ["men"],
             size : [],
-            color : []
+            color : [],
+            type : ["Mono Base", "Octagon", "Full lace", "Mirage", "Front Less Mirage", "Australian Mirage", "Australia", "Transparent Poly", "Custmize"]
         },
         {
             title : "Hair Topper",
             image : hair_topper,
             description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate.",
-            type : "product",
+            product_type : "product",
             gender : ["women"],
             size : [],
-            color : []
+            color : [],
+            type : []
         },
         {
             title : "Hair Fixing Tape",
             image : tape,
             description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate.",
-            type : "product",
+            product_type : "product",
             gender : ["women", "men"],
             size : [],
-            color : []
+            color : ["White Tape", "Red Tape", "Balue Tape"],
+            type : ["White Tape", "Red Tape", "Balue Tape", "No shine Tape"]
         },
         {
             title : "Hair Fixing Glue",
             image : glue,
             description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate.",
-            type : "product",
+            product_type : "product",
             gender : ["women", "men"],
             size : [],
-            color : []
+            color : [],
+            type : []
         },
         {
             title : "Glue/Tape Remover",
             image : remover,
             description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate.",
-            type : "product",
+            product_type : "product",
             gender : ["women", "men"],
             size : [],
-            color : []
+            color : [],
+            type : []
         },
         {
             title : "Hair Wig Clip",
             image : clip,
             description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate.",
-            type : "product",
+            product_type : "product",
             gender : ["women", "men"],
-            size : ["small", "medium", "big"],
-            color : []
+            size : ["small", "medium"],
+            color : [],
+            type : []
         },
         {
             title : "Hair Patch Fixing",
             image : fixing,
             description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate.",
-            type : "service",
+            product_type : "service",
             gender : ["men"],
             size : [],
-            color : []
+            color : [],
+            type : []
 
         },
         {
             title : "Hair Wig/patch Maintaining",
             image : maintaining,
             description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate.",
-            type : "service",
+            product_type : "service",
             gender : ["women", "men"],
             size : [],
-            color : []
+            color : [],
+            type : []
         },
         {
             title : " Outside Hair Patch Cutting",
             image : cutting,
             description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate.",
-            type : "service",
+            product_type : "service",
             gender : ["men"],
             size : [],
-            color : []
+            color : [],
+            type : []
+        },
+        {
+            title : "Scalp protector",
+            image : scalp_protector,
+            description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate.",
+            product_type : "product",
+            gender : ["men", "women"],
+            size : [],
+            color : [],
+            type : []
         }
     ];
 
@@ -137,7 +158,7 @@ const Services = () => {
 
     const services = useMemo(()=>{
        return productAndServices_data.filter((v)=>{
-            return v.type === "product"
+            return v.product_type === "product"
            }).map((v,i)=>{
                 return <Service_card
                 key={i}
@@ -160,7 +181,7 @@ const Services = () => {
 
     const products = useMemo(()=>{
        return productAndServices_data.filter((v)=>{
-            return v.type === "service"
+            return v.product_type === "service"
            }).map((v,i)=>{
                 return <Service_card
                 key={i}

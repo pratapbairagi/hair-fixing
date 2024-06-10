@@ -18,7 +18,13 @@ const Service_card = ({  values = {}, onClick_toggle = () => "", id = "", active
      },[activeDetails])
 
      const color = useMemo(()=>{
-        return activeDetails.size?.map((g, gi) => {
+        return activeDetails.color?.map((g, gi) => {
+             return <span key={gi} className="w-max px-2 py-0.5 text-xs text-gray-300 border rounded-sm">{g}</span>
+         })
+     },[activeDetails])
+
+     const type = useMemo(()=>{
+        return activeDetails.type?.map((g, gi) => {
              return <span key={gi} className="w-max px-2 py-0.5 text-xs text-gray-300 border rounded-sm">{g}</span>
          })
      },[activeDetails])
@@ -40,21 +46,24 @@ const Service_card = ({  values = {}, onClick_toggle = () => "", id = "", active
                     {values.description}
                 </p>
 
-                <div  className="w-full flex flex-col h-max">
+                <div  className="w-full flex flex-col h-max gap-y-1">
                     <span className="flex flex-wrap gap-x-2 w-full mt-4">
                         {gender}
                     </span>
-                    <span className="flex flex-wrap gap-x-2 w-full mt-2">
+                    <span className="flex flex-wrap gap-x-2 w-full">
                         {size}
                     </span>
-                    <span className="flex flex-wrap gap-x-2 w-full mt-2">
+                    <span className="flex flex-wrap gap-x-2 w-full">
                         {color}
+                    </span>
+                    <span className="flex flex-wrap gap-x-2 w-full">
+                        {type}
                     </span>
                 </div>
                 
                 <div className="flex w-full justify-start gap-x-5 mt-5">
                     <button  onClick={() => onClick_toggle({ id : id, values : values })} className="text-sm bg-orange-400 hover:bg-white hover:text-orange-400 border-orange-400 border text-white px-3 py-0.5 rounded-sm">{activeDetails.title ? "Close" : "See More"}</button>
-                    <NavLink to={`/${values.type === "service" ? "book" : "order"}`} className="text-sm border border-orange-300 text-orange-300 px-3 py-0.5 rounded-sm">{values.type === "product" ? "Order" : "Book"}</NavLink>
+                    <NavLink to={`/${values.product_type === "service" ? "book" : "order"}`} className="text-sm border border-orange-300 text-orange-300 px-3 py-0.5 rounded-sm">{values.product_type === "product" ? "Order" : "Book"}</NavLink>
                 </div>
             </div>
         </>
