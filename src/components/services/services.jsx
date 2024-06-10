@@ -17,14 +17,14 @@ import cutting from "./images/cutting.png"
 
 const Services = () => {
 
-    const [activeDetailsToggle, setActiveDetailsToggle] = useState(false)
+    // const [activeDetailsToggle, setActiveDetailsToggle] = useState(false)
     const [activeDetails, setActiveDetails] = useState({})
 
     const productAndServices_data = [
         {
             title : "Hair Wig",
             image : hair_wig,
-            description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate.",
+            description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi, cumque optio reiciendis esse obcaecati, vitae veniam labore deleniti sint laboriosam consequatur in corrupti dolorem minima iusto eaque molestiae totam. Voluptatem ut maiores autem obcaecati asperiores enim? Sint, natus veritatis quia velit libero praesentium unde in voluptatem, et, odit cupiditate.",
             type : "product",
             gender : ["women"],
             size : [],
@@ -114,14 +114,23 @@ const Services = () => {
         }
     ];
 
-    const onClick_toggle_handler = (values) => {
+    const onClick_toggle_handler = ({id, values}) => {
+        const active_prod_serv_card_details = document.getElementById(id);
+        const paraActive = document.getElementById(id+"p")
+        const toggleBtn = document.getElementById(`${id}toggle_btn`)
 
-        if(activeDetailsToggle){
-            setActiveDetailsToggle(false)
+        if(active_prod_serv_card_details.classList.contains("active_prod_serv_card_details")){
+
+            active_prod_serv_card_details.classList.remove("active_prod_serv_card_details")
+            paraActive?.classList.remove("active_prod_serv_card_details_para")
+            toggleBtn?.classList.remove("closeBtn_active")
             setActiveDetails({})
         }
         else{
-            setActiveDetailsToggle(true)
+            active_prod_serv_card_details.classList.add("active_prod_serv_card_details")
+            paraActive?.classList.add("active_prod_serv_card_details_para")
+            toggleBtn?.classList.add("closeBtn_active")
+            
             setActiveDetails(values)
         }
     };
@@ -142,8 +151,8 @@ const Services = () => {
                 values={v}
                 onClick_toggle={onClick_toggle_handler}
                 id={v.title+i}
-                activeDetailsToggle={activeDetailsToggle}
-                setActiveDetailsToggle={setActiveDetailsToggle}
+                // activeDetailsToggle={activeDetailsToggle}
+                // setActiveDetailsToggle={setActiveDetailsToggle}
                 activeDetails={activeDetails}
             />
            })
@@ -166,8 +175,8 @@ const Services = () => {
                 values={v}
                 onClick_toggle={onClick_toggle_handler}
                 id={v.title+i}
-                activeDetailsToggle={activeDetailsToggle}
-                setActiveDetailsToggle={setActiveDetailsToggle}
+                // activeDetailsToggle={activeDetailsToggle}
+                // setActiveDetailsToggle={setActiveDetailsToggle}
                 activeDetails={activeDetails}
             />
            })

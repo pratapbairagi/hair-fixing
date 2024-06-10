@@ -9,10 +9,16 @@
     z-index: 2;
     background-color: white;
 
+  
+}
+.active_prod_serv_card_details_para{
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 12; /* Number of lines to show */
     overflow: hidden;
     text-overflow: ellipsis;
-    height: calc(1.2em * 12);
+    height: max-content;
+}
+.closeBtn_active {
+    display: block;
 }
