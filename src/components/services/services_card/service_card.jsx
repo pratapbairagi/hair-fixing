@@ -2,9 +2,11 @@
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 import { XCircleIcon, ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline"
 import { memo, useEffect, useMemo, useRef, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Service_card = ({  values = {}, onClick_toggle = () => "", id = "", activeDetails = {} }) => {
+
+    const navigate = useNavigate()
 
     const gender = useMemo(()=>{
        return activeDetails.gender?.map((g, gi) => {
@@ -92,7 +94,9 @@ const Service_card = ({  values = {}, onClick_toggle = () => "", id = "", active
 }                
                 <div className="flex w-full justify-start gap-x-5 mt-5">
                     <button  onClick={() => onClick_toggle({ id : id, values : values })} className="text-sm bg-orange-400 hover:bg-white hover:text-orange-400 border-orange-400 border text-white px-3 py-0.5 rounded-sm">{activeDetails.title ? "Close" : "See More"}</button>
-                    <NavLink to={`/${values.product_type === "service" ? "book" : "order"}`} className="text-sm border border-orange-300 text-orange-300 px-3 py-0.5 rounded-sm">{values.product_type === "product" ? "Order" : "Book"}</NavLink>
+                    <button onClick={()=>{
+                        navigate(`/${values.product_type === "service" ? "book" : "order"}`, { state : values })
+                    }} className="text-sm border border-orange-300 text-orange-300 px-3 py-0.5 rounded-sm">{values.product_type === "product" ? "Order" : "Book"}</button>
                 </div>
             </div>
         </>

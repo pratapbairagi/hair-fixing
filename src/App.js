@@ -4,6 +4,8 @@ import FormComponent from './components/form/form';
 import Header from './components/header/header';
 import Layout from './components/layout/layout';
 import Footer from './components/footer/footer';
+import Order from './page/order/order';
+import Booking from './page/booking/booking';
 
 function App() {
   
@@ -13,6 +15,8 @@ function App() {
        <Header/>
         <Routes>
           <Route path='/' element={<Layout/>}/>
+          <Route path='/order' element={<Order/>}/>
+          <Route path='/booking' element={<Booking/>}/>
           {/* <Route path='/form' element={<FormComponent/>}/> */}
         </Routes>
         <Footer/>
