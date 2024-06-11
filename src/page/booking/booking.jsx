@@ -58,7 +58,7 @@ const Booking = () => {
 
                     </div>
                     <div className="order-1 md:order-2 h-max min-h-[18vh] md:min-h-[88%] md:w-[27%] w-[78vw] mx-auto md:mx-0 z-10 shadow-md" style={{ boxShadow: "0 0 0 6px white" }}>
-                        <img src={orderImg} className="h-max md:min-h-[70vh] w-[100%] object-cover bg-gray-800 shadow-md" alt="" />
+                        <img src={orderImg} className="h-max md:min-h-[70vh] w-[100%] object-cover shadow-md" alt="" />
                     </div>
 
                 </div>

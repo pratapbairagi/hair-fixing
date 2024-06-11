@@ -95,7 +95,7 @@ const Service_card = ({  values = {}, onClick_toggle = () => "", id = "", active
                 <div className="flex w-full justify-start gap-x-5 mt-5">
                     <button  onClick={() => onClick_toggle({ id : id, values : values })} className="text-sm bg-orange-400 hover:bg-white hover:text-orange-400 border-orange-400 border text-white px-3 py-0.5 rounded-sm">{activeDetails.title ? "Close" : "See More"}</button>
                     <button onClick={()=>{
-                        navigate(`/${values.product_type === "service" ? "book" : "order"}`, { state : values })
+                        navigate(`/${values.product_type === "service" ? "booking" : "order"}`, { state : values })
                     }} className="text-sm border border-orange-300 text-orange-300 px-3 py-0.5 rounded-sm">{values.product_type === "product" ? "Order" : "Book"}</button>
                 </div>
             </div>
