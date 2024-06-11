@@ -16,7 +16,7 @@ const Order = () => {
     return (
         <>
             <div className="w-full h-max bg-gray-100 h-max min-h-[106vh]">
-                <div className="flex flex-col md:flex-row md:gap-x-3 justify-center items-center relative bg-white w-[90vw] min-h-[80vh] md:min-h-[80vh] left-[5vw] top-[14vh] rounded-md shadow-md">
+                <div className="flex flex-col md:flex-row md:gap-x-3 justify-center items-center relative bg-white w-[90vw] min-h-[82vh] md:min-h-[80vh] left-[5vw] top-[14vh] rounded-md shadow-md">
                     <div className="absolute bg-orange-400  w-full md:w-[18vw] top-0 h-[20%] md:h-[100%] rounded-md md:right-0"></div>
 
                     <div className="order-2 md:order-1 h-max min-h-[55vh] md:min-h-[88%] md:w-[65%] w-[78vw] bg-transparent mx-auto md:mx-0 z-10 grid grid-cols-12" style={{ placeContent: "flex-start" }}>
