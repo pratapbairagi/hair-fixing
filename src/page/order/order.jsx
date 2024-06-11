@@ -16,7 +16,7 @@ const Order = () => {
     return (
         <>
             <div className="w-full h-max bg-gray-100 h-max min-h-[106vh]">
-                <div className="flex flex-col md:flex-row md:gap-x-3 justify-center items-center relative bg-white w-[90vw] min-h-[90vh] md:min-h-[80vh] left-[5vw] top-[14vh] rounded-md shadow-md">
+                <div className="flex flex-col md:flex-row md:gap-x-3 justify-center items-center relative bg-white w-[90vw] min-h-[80vh] md:min-h-[80vh] left-[5vw] top-[14vh] rounded-md shadow-md">
                     <div className="absolute bg-orange-400  w-full md:w-[18vw] top-0 h-[20%] md:h-[100%] rounded-md md:right-0"></div>
 
                     <div className="order-2 md:order-1 h-max min-h-[55vh] md:min-h-[88%] md:w-[65%] w-[78vw] bg-transparent mx-auto md:mx-0 z-10 grid grid-cols-12" style={{ placeContent: "flex-start" }}>
@@ -52,8 +52,8 @@ const Order = () => {
                         <button className="w-full md:w-[98%] mx-auto text-nowrap col-span-12 text-center py-1 mt-3 md:mt-6 bg-orange-400 text-gray-100 font-semibold">Order Request </button>
 
                     </div>
-                    <div className="order-1 md:order-2 h-max min-h-[18vh] md:min-h-[88%] md:w-[27%] w-[78vw] mx-auto md:mx-0 z-10 shadow-md" style={{ boxShadow: "0 0 0 6px white" }}>
-                        <img src={orderImg} className="h-[20vh] md:min-h-[70vh] w-[100%] object-cover bg-gray-800 shadow-md" alt="" />
+                    <div className="order-1 md:order-2 h-max min-h-[18vh] md:min-h-[88%] md:w-[27%] w-[78vw] mx-auto md:mx-0 z-10 shadow-md mt-4 md:mt-0" style={{ boxShadow: "0 0 0 6px white" }}>
+                        <img src={orderImg} className="h-[20vh] md:min-h-[70vh] w-[100%] object-cover shadow-md" alt="" />
                     </div>
 
                 </div>
