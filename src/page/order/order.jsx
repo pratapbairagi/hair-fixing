@@ -65,13 +65,6 @@ const Order = () => {
 
            console.log("url ", downloadUrl)
 
-            //         const response = await axios.post('https://content.dropboxapi.com/2/files/upload', formData, {
-            //   headers: {
-            //     Authorization: `Bearer ${accessToken}`,
-            //     'Content-Type': 'application/octet-stream',
-            //     'Dropbox-API-Arg': JSON.stringify({ path: `/uploads/${file.name}` }) // Specify the upload path
-            //   }
-            // });
 
         } catch (error) {
             console.log(error)
@@ -80,20 +73,31 @@ const Order = () => {
     }
 
     async function uploadFile(file) {
-        // formData.append('file', file);
+        try {
+            
+        
 
-        const downloadingUrl = await axios.post('https://content.dropboxapi.com/2/files/upload', file)
+        const downloadingUrl = await axios.post('https://content.dropboxapi.com/2/files/upload', file, {
+            headers: {
+                Authorization: `Bearer ${accessToken}`,
+                'Content-Type': 'application/octet-stream',
+                'Dropbox-API-Arg': JSON.stringify({ path: `/uploads/${file.name}` }) // Specify the upload path
+              }
+        })
             .then(response => {
-                const downloadUrl = response.data.downloadUrl;
+                const downloadUrl = response.data.path_lower;
 
                 return downloadUrl
-                // setDownloadLink(downloadUrl);
             })
             .catch(error => {
-                console.error('Error uploading file:', error);
+                return error
             });
 
         return downloadingUrl;
+
+    } catch (error) {
+            return error
+    }
     };
 
 
