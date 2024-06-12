@@ -6,7 +6,7 @@ const Input = ({fieldsetClassName="", labelClassName="", labelText="", labelHtml
         <>
         <fieldset className={fieldsetClassName}>
                             <label htmlFor={labelHtmlFor} className={labelClassName}>{labelText}</label>
-                            <input type={inputType} defaultValue={inputDefaultValue} name={inputName} className={inputClassName} />
+                            <input onChange={(e)=> inputOnchangeFun(e)} type={inputType} defaultValue={inputDefaultValue} name={inputName} className={inputClassName} />
                         </fieldset>
         </>
     )
